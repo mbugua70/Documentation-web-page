@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="documentation page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="documentation.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="page">
+        <div id="nav">
+            <nav id="navbar">
+                <header>JavaScript Documentation</header>
+                <a href="#Introduction" class="nav-link"> Introduction</a>
+                <a href="#Why-Learn-JavaScript" class="nav-link">Why Learn JavaScript </a>
+                <a href="#Basics-Of-JavaScript" class="nav-link">Basics of JavaScript </a>
+                <a href="#Data-Types" class="nav-link">Data Types</a>
+                <a href="#Function" class="nav-link"> Function</a>
+                <a href="#Keywords" class="nav-link">Keywords</a>
+                <a href="#Variables" class="nav-link"> Variable</a>
+                <a href="#Comments" class="nav-link">Comments</a>
+                <a href="#Arrays" class="nav-link">Arrays</a>
+                <a href="#References" class="nav-link">References</a>
+            </nav>
+        </div>
+        <div id="main-content">
+            <main id="main-doc">
+                <section class="main-section" id="Introduction">
+                    <header>Introduction </header>
+                    <p>Javascript was introduced in 1995 as a was to add programs to a web pages in the Netcape
+                        Navigator browser.</p>
+                    <p>Its important to note that javascript has nothing to do with java programming language.
+                        The similar name was being inspired by marketing considerations.</p>
+                    <p>Javascript cannot only be used in web browsers ,some database such as Mongo DB
+                        and CouchDB use javascrpt as their scripting and query language.</p>
+                    <p>we also have Node.js which provide an enviroment for programming javascript outside of the
+                        browser. javscript is a dynamic computer programming language used to make web browser
+                        pages interactive.</p>
+                    <p> It was invented by Brendan Eich in 1995,and became an ECMA standard in 1997.</p>
+                    <h1>Internal JavaScript</h1>
+                    <p>We learn how javascript can be used together with the html elements inside the html file.</p>
+                    <p>We said javascript is used with web pages,hence you should know that javascript should be
+                        inserted between tags.
+                    </p>
+                    <code>
+
+                            document.getElementById("work").innerHTML = "learn javascript";
+                        
+                    </code>
+                    <h1>External JavaScript</h1>
+                    <p>Script can also be placed in an external file,this file will be containg javascript script.
+                    </p>
+                    <P>This file will be containg javascript script.The javascrpt file have the file extension.js.</P>
+                    <P>To use the file you put the name of the script file in the src attribute.
+                    </P>
+
+                    <h1>Advantage External JavaScript</h1>
+                    <p>Placing the javascript externally has the following Advantage:</p>
+                    <ul>
+                        <li>It separates javascript code and html code.</li>
+                        <li>Its easier read. </li>
+                        <li>It speed up the page.</li>
+                    </ul>
+
+
+                </section>
+                <section class="main-section" id="Why-Learn-JavaScript">
+                    <hearder>Why Learn JavaScript</hearder>
+                    <p>Below are the reason why you should consider to learn javascript:</p>
+                    <ul>
+                        <li>Most popular programming language.</li>
+                        <li>JavaScript is versatile.</li>
+                        <li>Its in your browser.</li>
+                    </ul>
+                </section>
+                <section class="main-section" id="Basics-Of-JavaScript">
+                    <header>Basics Of JavaScript</header>
+                    <P>When startinig to learn javascript their are javascript basics you should consider to master
+                        first,this include the following:</P>
+                    <ul>
+                        <li>Data Types</li>
+                        <li>Function</li>
+                        <li>Keywords</li>
+                        <li>Variables</li>
+                        <li>Comments</li>
+                        <li>Arrays</li>
+                    </ul>
+                </section>
+                <section class="main-section" id="Data-Types">
+                    <header>Data Type</header>
+                    <p>javascript variable can hold many data types:</p>
+                    <dl>
+                        <dt><b>String</b></dt>
+                        <dd>A character or a string of character.</dd>
+                        <dt><b>Number</b></dt>
+                        <dd>A value with true or false.</dd>
+                        <dt><b>Boolean</b></dt>
+                        <dd>A value with true or false.</dd>
+                        <dt><b>Function</b></dt>
+                        <dd>A user defined method.</dd>
+                        <dt><b>Object</b></dt>
+                        <dd>A built-in or user-defined object.</dd>
+                    </dl>
+                </section>
+                <section class="main-section" id="Function">
+                    <header>Function</header>
+                    <p>A function is a code block that can repeat to run many times.To define a function,use
+                        function-name.</p>
+                    <p>Function is exercuted when something calls it.</p>
+                    <code>
+                            function myFunction(p1,p2){
+                                return p1 * p2;
+                            }
+                        </code>
+                    <h1>Function Syntax</h1>
+                    <p>Javascript function is defined with the function keyword,followed by a name then followed
+                        by parentheses (). Function names can contain letters,digits,underscores,and dollar signs.
+                    </p>
+                </section>
+                <section class="main-section" id="Keywords">
+                    <header>Keywords</header>
+                    <p>Keywords belong to javascript itself.The following are example of javascript keyword:</p>
+                    <ul>
+                        <li>Break</li>
+                        <li>Return</li>
+                        <li>False</li>
+                        <li>Typeof</li>
+                        <li>With</li>
+                        <li>Forms</li>
+                    </ul>
+                </section>
+                <section class="main-section" id="Variables">
+                    <header>Variables</header>
+                    <p>Variable is a symbolic name associated with a value.They are containers for storing data values.
+                    </p>
+                    <code>
+                        var x =5;
+                        var y =6;
+                        var z = x + y;
+                    </code>
+                </section>
+                <section class="main-section" id="Comments">
+                    <header>Comments</header>
+                    <p>Comments in javascript can be used to explaing javascript code and also prevent exercution,when
+                        testing alternative code.</p>
+                    <p>There are two type of comment in javascript:</p>
+
+                    <h1>Single Line Comments</h1>
+                    <p>They start with //</p>
+                    <p>Code that comes before // will not be exercuted</p>
+                    <code>
+                        // This is a single line comment.
+                    </code>
+
+                    <h1>Multi-Line Comments</h1>
+                    <p>They start with /* and end with */</p>
+                    <p>Any code between /* and */ will not be exercuted</p>
+
+                    <code>
+                         /* This is a multi-line comment. */
+                     </code>
+                </section>
+                <section class="main-section" id="Arrays">
+                    <header>Arrays</header>
+                    <p>Arrays in javascript are used to store multiple values in a single variable.new Array() will
+                        create an array.</p>
+                    <code>
+                            var array-name = new Array ("value0","value1","value2");
+                        </code>
+                    <p>Showing an array element values we use the following syntax for example.</p>
+
+                    <code>
+                             document.write(array-name[index]);
+                         </code>
+                    <p>Getting the size of an array.</p>
+
+                    <code>
+                              //A function can get the size of an array.
+                              array.length;
+
+                          </code>
+
+
+                </section>
+                <section class="main-section" id="References">
+                    <header>References</header>
+                    <p>Below are some of the books that can help help you to start your journey or master javascript</p>
+                    <ul>
+                        <li>Eloquent JavaScript by Marijn Haverbeke.</li>
+                        <li>JavaScript in 8 Hours by Yao Ray.</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
